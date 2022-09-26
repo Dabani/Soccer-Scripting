@@ -13,6 +13,7 @@ public class SpawnManagerX : MonoBehaviour
 
     public int enemyCount;
     public int waveCount = 1;
+    public float enemySpeed = 0.0f;
 
 
     public GameObject player; 
@@ -25,6 +26,7 @@ public class SpawnManagerX : MonoBehaviour
         if (enemyCount == 0)
         {            
             SpawnEnemyWave(waveCount);
+            enemySpeed += 20.0f;
         }
 
     }
